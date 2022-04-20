@@ -71,16 +71,18 @@
 .snapshot {
     height: 50vh;
     width: 40%;
-    min-width: 250px;
-    min-height: 180px;
+    // min-width: 250px;
+    // min-height: 180px;
     border: 1em solid white;
     background-color: white;
 }
 
 .snapOne {
     background-image: url('../../assets/goddesses.png');
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
+    position: sticky;
+    top: 10vh;
 }
 
 .snapTwo {
