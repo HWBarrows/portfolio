@@ -21,7 +21,7 @@ export default function ComputerThings() {
                         </ul>
                     
                         <ul>
-                            <li>Training and Development</li>
+                            <li>Employee Training </li>
                             <li>Stakeholder Engagement</li>
                         </ul>
                     
