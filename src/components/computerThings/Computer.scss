@@ -1,0 +1,138 @@
+.computerWrapper {
+    background-color: white;
+    padding-right: 3em;
+    padding-left: 3em;
+
+    .stickyTitle{
+        padding-top: 2em;
+        background-color: white;
+        height: 12.5vh;
+        position: sticky;
+        top: 0;
+    }
+
+    h2{
+        background-color: white;
+        width:50%;
+    }
+}
+
+.social {
+    padding-top: 20vh;
+}
+
+.digital {
+    padding-top:1em;
+}
+
+.listWrapper {
+    //border: 1px solid fuchsia;
+    height: 10vh;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: space-evenly;
+        ul {
+            // display: inline-block;
+            li {
+                list-style:circle;
+                text-align:justify;
+            }
+        }
+}
+
+.projectWrapper {
+    //border: 1px solid aqua;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.contentWrapper {
+    //border: 2px solid green;
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+
+ .text {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    
+    p{
+        margin-top: 20vh;
+        background-color: white;
+    }
+ }
+.snapshot {
+    height: 50vh;
+    width: 40%;
+    min-width: 250px;
+    min-height: 180px;
+    border: 1em solid white;
+    background-color: white;
+}
+
+.snapOne {
+    background-image: url('../../assets/goddesses.png');
+    background-size: 100%;
+    background-position: center;
+}
+
+.snapTwo {
+    background-image: url('../../assets/wuForever.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: sticky;
+    top: 10vh;
+}
+
+.snapThree {
+    background-image: url('../../assets/tipcal.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: sticky;
+    top: 10vh;
+}
+.snapFour {
+    background-image: url('../../assets/sweet.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: sticky;
+    top: 10vh;
+}
+
+.stacking{
+    height: 5.5vh;
+}
+
+
+.title1{
+    position: sticky;
+    top:10vh;
+}
+
+.title2{
+    position: sticky;
+    top:15vh;
+}
+
+.title3{
+    position: sticky;
+    top:20vh;
+}
+
+.title4{
+    
+    position: sticky;
+    top:25vh;
+}
+
+

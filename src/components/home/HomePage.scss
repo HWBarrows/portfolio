@@ -1,0 +1,50 @@
+.flexContainer{
+    //border: 4px solid aqua;
+    height: 260vh;
+    //width: 100%;
+    display: flex;
+    justify-content: center;
+    //min-width: 625px;
+}
+
+.skillsWrapper {
+    width: 50%;
+    min-width: 550px;
+    
+    display: flex;
+    justify-content: space-between;
+
+    :first-child{
+        margin-top: 110vh;
+        text-align: right;
+    }
+
+    :last-child{
+        margin-top: 155vh;    
+        text-align: left;
+    }
+}
+
+.skillsColl1 {
+    height: 100px;
+    width: 10vw;
+    min-width: 150px;
+    font-size: 5em;
+    position: sticky;
+    top:40vh;
+}
+
+
+.prettyWords{
+    margin-top: 20vh;
+    height: 50vh;
+    width: 25%;
+    box-sizing: border-box;
+    background-image: url('../../assets/softerEdge.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+    
+}
