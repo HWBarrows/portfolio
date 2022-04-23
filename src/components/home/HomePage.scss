@@ -1,27 +1,23 @@
 .flexContainer{
-    //border: 4px solid aqua;
     height: 260vh;
-    //width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    //min-width: 625px;
 }
 
 .skillsWrapper {
-    width: 50%;
-    // min-width: 550px;
-    
+    width: 75%;
     display: flex;
     justify-content: space-between;
 
     :first-child{
         margin-top: 110vh;
-        text-align: right;
+        text-align: center;
     }
 
     :last-child{
         margin-top: 155vh;    
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -33,7 +29,6 @@
     position: sticky;
     top:40vh;
 }
-
 
 .prettyWords{
     margin-top: 20vh;
@@ -47,4 +42,25 @@
     position: fixed;
     z-index: -1;
     
+}
+
+@media screen and (max-width: 1600px){
+    .skillsWrapper {
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .skillsWrapper {
+        width:70%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .skillsWrapper {
+        width:100%;
+    }
+    .skillsColl1 {
+        font-size: 4.25em;
+    }
 }

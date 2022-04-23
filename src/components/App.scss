@@ -19,10 +19,12 @@
     font-weight: normal;
 }
 
-
+.appWrapper{
+    display: flex;
+    justify-content: center;
+}
 
 .happyAppy {
-    //border: 2px solid greenyellow;
+    max-width: 1600px;
     position: relative;
-//     min-width: 600px;
 }

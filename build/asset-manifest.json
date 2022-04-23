@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.06739bf2.css",
-    "main.js": "/static/js/main.2c512f60.js",
+    "main.js": "/static/js/main.53209da8.js",
     "static/media/arturo-castaneyra-7laIG_Xv5FI-unsplash.jpg": "/static/media/arturo-castaneyra-7laIG_Xv5FI-unsplash.b147444e23e14a93cbcd.jpg",
     "static/media/texting.jpg": "/static/media/texting.57f6774bc154ffa65a57.jpg",
     "static/media/goddesses.png": "/static/media/goddesses.26ed06860bdcd4bcb938.png",
@@ -13,10 +13,10 @@
     "static/media/tipcal.png": "/static/media/tipcal.fe982d5f7d389f254f43.png",
     "index.html": "/index.html",
     "main.06739bf2.css.map": "/static/css/main.06739bf2.css.map",
-    "main.2c512f60.js.map": "/static/js/main.2c512f60.js.map"
+    "main.53209da8.js.map": "/static/js/main.53209da8.js.map"
   },
   "entrypoints": [
     "static/css/main.06739bf2.css",
-    "static/js/main.2c512f60.js"
+    "static/js/main.53209da8.js"
   ]
 }
