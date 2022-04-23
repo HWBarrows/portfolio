@@ -6,6 +6,7 @@
 }
 
 .skillsWrapper {
+    max-width: 1200px;
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -56,11 +57,11 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 620px) {
     .skillsWrapper {
         width:100%;
     }
     .skillsColl1 {
-        font-size: 4.25em;
+        font-size: 4em;
     }
 }

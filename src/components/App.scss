@@ -26,5 +26,14 @@
 
 .happyAppy {
     max-width: 1600px;
+    min-width: 100%;
+    border:2px solid greenyellow;
     position: relative;
 }
+
+// @media screen and (min-width:400px){
+//     .happyAppy {
+//         width: 100%;
+//     }
+    
+// }
