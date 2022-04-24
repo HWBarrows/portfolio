@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Karla', sans-serif;
+    
 
     // $hbpink:#CD6479;
     // $hbaqua: #41B2BA;
@@ -19,10 +20,26 @@
     font-weight: normal;
 }
 
+.appWrapper{
+    display: flex;
+    justify-content: center;
+    
+}
 
-
+body {
+    max-width: 1600px; 
+}
 .happyAppy {
-    //border: 2px solid greenyellow;
+    border:2px solid greenyellow;
     position: relative;
-//     min-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+@media screen and (max-width:600px){
+    body {
+        width: 100%;
+    }
+    
 }

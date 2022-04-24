@@ -19,27 +19,27 @@ $hbaqua: #41B2BA;
     margin-bottom: 10em;
     padding: 2em;
     height: 60vh;
-    width: 80vw;
+    width: 80%;
     background-color: rgba(0, 0, 0, 0.887);
     position: sticky;
     top: 20vh;
     z-index: 1;
 }
 
-.skillWrapper {
-    width: 80vw;
-    display: flex;
-    justify-content: space-around;
-    z-index: 2;
-    //border: 1px solid fuchsia;
-    position: sticky;
-    top: 55vh;
-    margin-bottom: 17em;
-    div {
-        height: 10vh;
-        width: 30vw;
-        border: 1px solid $hbaqua;
-        position: sticky;
-        top: 45vh;
-    }
-}
+// .skillWrapper {
+//     width: 80vw;
+//     display: flex;
+//     justify-content: space-around;
+//     z-index: 2;
+//     //border: 1px solid fuchsia;
+//     position: sticky;
+//     top: 55vh;
+//     margin-bottom: 17em;
+//     div {
+//         height: 10vh;
+//         width: 30vw;
+//         border: 1px solid $hbaqua;
+//         position: sticky;
+//         top: 45vh;
+//     }
+// }

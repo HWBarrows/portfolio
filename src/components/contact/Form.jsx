@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 import './Contact.scss'
 
 export default function ContactForm (){
@@ -7,6 +8,8 @@ export default function ContactForm (){
     const [ sendEmail, setSendEmail ] = useState("")
     const [ sendMessage, setSendMessage ] = useState("")
 
+    
+    const port = process.env.REACT_APP_PORT
     
 
     const handleSubmit = (e) => {
@@ -22,7 +25,7 @@ export default function ContactForm (){
                     content: sendMessage
                 })
             }
-        fetch('http://localhost:3030/messages', config)
+        fetch(`http://localhost:${port}/messages`, config)
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(error => console.log(error.message))
