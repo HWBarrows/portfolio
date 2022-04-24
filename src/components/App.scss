@@ -26,14 +26,13 @@
     
 }
 
-body {
-    max-width: 1600px; 
-}
+
 .happyAppy {
     border:2px solid greenyellow;
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 1600px; 
     
 }
 
