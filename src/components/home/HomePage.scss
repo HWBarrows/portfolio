@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    // scroll-behavior: smooth;
 }
 
 .skillsWrapper {
@@ -32,9 +33,11 @@
 }
 
 .prettyWords{
+    // border: 1px solid fuchsia;
     margin-top: 20vh;
     height: 50vh;
     width: 25%;
+    margin-left: 5px;
     box-sizing: border-box;
     background-image: url('../../assets/softerEdge.png');
     background-size: contain;

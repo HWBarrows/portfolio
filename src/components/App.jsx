@@ -6,11 +6,11 @@ import NavBar from './navBar/NavBar.jsx'
 
 export default function App (){
     return (
-        <dir className="appWrapper">
+         <dir className="appWrapper">
             <div className='happyAppy'>
                 <NavBar/>
                 <MyRoutes/>
             </div>
-        </dir>
+         </dir>
     )
 }

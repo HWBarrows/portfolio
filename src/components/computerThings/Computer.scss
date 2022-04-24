@@ -31,6 +31,7 @@
     margin-top: 5em;
     margin-bottom: 5em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
         ul {
             // display: inline-block;
@@ -42,7 +43,7 @@
 }
 
 .projectWrapper {
-    //border: 1px solid aqua;
+    border: 1px solid aqua;
     background-color: white;
     display: flex;
     flex-direction: column;
