@@ -14,12 +14,11 @@ $hbaqua: #41B2BA;
 .show {
     margin-top: 1em;
     display: block;
-    
 
     li {
         //border: 1px solid red;
         //margin: 1em;
-        
+        background-color: white;
         list-style: none;
         height:1.5em;
         padding-top: .5em;
@@ -27,7 +26,7 @@ $hbaqua: #41B2BA;
         
                 &:hover{
                     
-                    color: #CD6479;
+                    transform: scale(1.15);
                     -webkit-box-shadow: 1px 5px 4px -1px rgba(0,0,0,0.46); 
                     box-shadow: 1px 5px 4px -1px rgba(0,0,0,0.46);
                 }
@@ -35,11 +34,6 @@ $hbaqua: #41B2BA;
             a {
                 color: $hbaqua;
                 text-decoration: none;
-
-                &:hover{
-                    //font-weight: bold;
-                    color: #CD6479;
-                }
             }
         
     }

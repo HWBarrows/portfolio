@@ -8,7 +8,7 @@
 }
 
 .formWrapper {
-    
+    //border:2px solid orange;
     height: 90vh;
     width:100%;
     padding-top: 5vh;
@@ -52,6 +52,7 @@ form {
     gap: 10px;
     width: 40%;
     
+    
     input{
         width:48%;
         height: 2em;
@@ -65,4 +66,23 @@ textarea {
     padding: .25em;
     border-radius: 5px;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px){
+    .small {
+        flex-direction: column;
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .small{
+        width: 80%;
+    }
+    textarea {
+        width: 80%;
+    }
 }

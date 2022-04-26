@@ -14,21 +14,22 @@ export default function ContactForm (){
 
     const handleSubmit = (e) => {
         e.preventDefault()
-            const config = {
-                method:"POST",
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    name: sendName,
-                    email: sendEmail,
-                    content: sendMessage
-                })
-            }
-        fetch(`http://localhost:${port}/messages`, config)
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(error => console.log(error.message))
+            // const config = {
+            //     method:"POST",
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({
+            //         name: sendName,
+            //         email: sendEmail,
+            //         content: sendMessage
+            //     })
+            // }
+
+        // fetch(`http://localhost:${port}/messages`, config)
+        // .then(response => response.json())
+        // .then(response => console.log(response))
+        // .catch(error => console.log(error.message))
 
         setSendName("")
         setSendEmail("")

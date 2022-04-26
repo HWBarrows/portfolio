@@ -49,6 +49,11 @@ export default function ComputerThings() {
                     
                     </div>
                     </div>
+
+                <div className='stickyTitle'>
+                    <h1>Projects</h1>
+                </div>
+
                     <div className='projectWrapper'>
                             <h2 className='title1 stacking'>Goddess Gallery</h2>
                         <div className='contentWrapper'>
