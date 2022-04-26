@@ -8,10 +8,7 @@ export default function AboutMe(){
                 <h1>About</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, molestias!</p>
             </div>
-            {/* <div className='skillWrapper'>
-                <div className="techSkills"></div>
-                <div className='softSkills'></div>
-            </div> */}
+            
         </div>
     )
 }

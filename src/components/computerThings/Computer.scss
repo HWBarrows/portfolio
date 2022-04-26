@@ -1,19 +1,24 @@
 .computerWrapper {
+    //border: 2px solid fuchsia;
     background-color: white;
-    padding-right: 3em;
-    padding-left: 3em;
+    padding-right: 2em;
+    padding-left: 2em;
 
     .stickyTitle{
-        padding-top: 2em;
+        padding-top: 1.5em;
         background-color: white;
         height: 12.5vh;
         position: sticky;
         top: 0;
+        
+        h1{
+            padding-bottom: 1em;
+        }
     }
 
     h2{
         background-color: white;
-        width:50%;
+        //width:50%;
     }
 }
 
@@ -43,15 +48,16 @@
 }
 
 .projectWrapper {
-    border: 1px solid aqua;
+    //border: 1px solid aqua;
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    
     
 }
 .contentWrapper {
-    //border: 2px solid green;
+    
     display: flex;
     height: 80vh;
     justify-content: space-between;
@@ -67,6 +73,7 @@
     p{
         margin-top: 20vh;
         background-color: white;
+        text-align: justify;
     }
  }
 .snapshot {
@@ -76,6 +83,7 @@
     // min-height: 180px;
     border: 1em solid white;
     background-color: white;
+    //box-sizing: border-box;
 }
 
 .snapOne {
@@ -113,7 +121,9 @@
 }
 
 .stacking{
+    //border: 2px solid orange;
     height: 5.5vh;
+    
 }
 
 
@@ -139,3 +149,22 @@
 }
 
 
+@media screen and (max-width: 850px){
+    .stacking {
+        width: 100%;
+    }
+    .contentWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text {
+        width: 80%;
+    }
+    .snapshot {
+        width:80%;
+        margin-bottom: 2em;
+    }
+    .snapOne, .snapTwo, .snapThree, .snapFour {
+        position:static;
+    }
+}
