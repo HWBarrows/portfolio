@@ -20,23 +20,18 @@
     font-weight: normal;
 }
 
-body {
-    width:99%;
-    
+.appWrapper{
     display: flex;
     justify-content: center;
     
 }
-// .appWrapper{
-//     display: flex;
-//     justify-content: center;
-    
-// }
- 
+
 
 .happyAppy {
     //border:2px solid greenyellow;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
     max-width: 1600px; 
     
 }

@@ -2,9 +2,9 @@ $hbpink:#CD6479;
 $hbaqua: #41B2BA;
 
 .aboutWrapper {
-    //height: 200vh;
+    height: 200vh;
     width: 100%;
-    background-image: url('../../assets/prettyCity.png');
+    background-image: url('../../assets/arturo-castaneyra-7laIG_Xv5FI-unsplash.jpg');
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -15,24 +15,14 @@ $hbaqua: #41B2BA;
 }
 
 .summary {
-    //scroll-snap-align:center;
     margin-top: 90vh;
     margin-bottom: 10em;
     padding: 2em;
-    //height: 60vh;
-    width:80%;
+    height: 60vh;
+    width:80vw;
     background-color: rgba(0, 0, 0, 0.887);
     position: sticky;
     top: 20vh;
     z-index: 1;
-
-    h1{
-        margin-bottom: 1em;
-    }
-
-    p{
-        text-align: justify;
-        margin-top: 1em;
-    }
 }
 

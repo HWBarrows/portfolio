@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import * as Realm from 'realm-web'
-import './Contact.scss'
-
 
 const REALM_APP_ID = "mailserver-pnqaa"
 const app = new Realm.App({id: REALM_APP_ID})
@@ -19,8 +16,7 @@ async function login (){
      }
 }
 
-login()
-export default  function ContactForm (){
+export default function ContactForm (){
 
     const [ sendName, setSendName ] = useState("")
     const [ sendEmail, setSendEmail ] = useState("")

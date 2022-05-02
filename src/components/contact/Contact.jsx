@@ -3,7 +3,7 @@ import './Contact.scss'
 
 export default function Contact (){
     return (
-        
+        <div>
             <div className='contactWrapper'>
               <Form/>  
               <div className='icons'>
@@ -13,6 +13,6 @@ export default function Contact (){
               </div>
             </div>
             
-        
+        </div>
     )
 }
