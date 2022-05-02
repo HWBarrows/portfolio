@@ -7,47 +7,35 @@ export default function ComputerThings() {
              <h1>Skills</h1>
             </div> */}
                 <div className='social'>
-                    <h2>Soft</h2>
+                    <h2>Soft Skills</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, est non fuga facilis iure magnam, eveniet optio eius incidunt veniam culpa, reprehenderit expedita! Consectetur, rerum id, minus voluptatum qui perspiciatis vitae ipsum sit veniam a iste eum sapiente. Magni delectus perferendis culpa quasi non distinctio reprehenderit eligendi omnis harum ex.</p>
                     
-                    <div className='listWrapper'>
+                    <ul className='listWrapper'>
                         
-                            <div>Project Management</div>
-                            <div>Localization</div>
-                        
-                        
-                            <div>Documentation</div>
-                            <div>Compliance Management</div>
-                        
-                    
-                       
-                            <div>Employee Training </div>
-                            <div>Stakeholder Engagement</div>
-                        
-                    
-                    </div>
+                            <li>Project Management</li>
+                            <li>Localization</li>
+                            <li>Documentation</li>
+                            <li>Compliance Management</li>
+                            <li>Employee Training </li>
+                            <li>Stakeholder Engagement</li>
+                    </ul>
 
                 </div>
              <hr/>
-                <div className='digital'>
-                    <h2>Hard</h2>
+                <div className='social'>
+                    <h2>Hard Skills</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellendus rem distinctio a dignissimos, magnam neque recusandae dolorum quae culpa molestias impedit quibusdam rerum officiis ad iure quas laboriosam! Similique veniam nobis modi nulla esse dolor quas. Voluptas consequuntur qui, similique deleniti animi quas magni dignissimos quos aspernatur hic odio.</p>
-                    <div className='listWrapper'>
-                        <ul>
-                            <div>JavaScript & React</div>
-                            <div>Css, Scss, & Html</div>
-                        </ul>
-                        <ul>
-                            <div>Node JS</div>
-                            <div>MongoDb </div>
-                        </ul>
-                    
-                        <ul>
-                            <div> Git & Github</div>
-                            <div>Deployment: Heroku & Azure</div>
+                    <ul className='listWrapper'>
+                        
+                            <li>JavaScript & React</li>
+                            <li>Css, Scss, & Html</li>
+                            <li>Node JS</li>
+                            <li>MongoDb </li>
+                            <li> Git & Github</li>
+                            <li>Deployment: Heroku & Azure</li>
                         </ul>
                     
-                    </div>
+                    
                     </div>
 
                 <div className='stickyTitle'>

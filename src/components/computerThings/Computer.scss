@@ -38,13 +38,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-        ul {
-            // display: inline-block;
+        
             li {
                 list-style:circle;
                 text-align:justify;
             }
-        }
+        
 }
 
 .projectWrapper {
@@ -90,8 +89,8 @@
     background-image: url('../../assets/goddesses.png');
     background-size: cover;
     background-position: center;
-    position: sticky;
-    top: 10vh;
+    // position: sticky;
+    // top: 10vh;
 }
 
 .snapTwo {
@@ -99,8 +98,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: sticky;
-    top: 10vh;
+    // position: sticky;
+    // top: 10vh;
 }
 
 .snapThree {
@@ -108,44 +107,45 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    position: sticky;
-    top: 10vh;
+    // position: sticky;
+    // top: 10vh;
 }
 .snapFour {
     background-image: url('../../assets/sweet.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    position: sticky;
-    top: 10vh;
+    // position: sticky;
+    // top: 10vh;
 }
 
 .stacking{
     //border: 2px solid orange;
     height: 5.5vh;
-    
+    padding-bottom: 1em;
+    width: 40vw;
 }
 
 
 .title1{
     position: sticky;
-    top:10vh;
+    top:3em;
 }
 
 .title2{
     position: sticky;
-    top:15vh;
+    top:4.5em;
 }
 
 .title3{
     position: sticky;
-    top:20vh;
+    top:6em;
 }
 
 .title4{
     
     position: sticky;
-    top:25vh;
+    top:7.5em;
 }
 
 
@@ -164,7 +164,5 @@
         width:80%;
         margin-bottom: 2em;
     }
-    .snapOne, .snapTwo, .snapThree, .snapFour {
-        position:static;
-    }
+    
 }

@@ -1,3 +1,8 @@
+.snapContainer {
+    scroll-snap-type: y mandatory;
+    // overflow-y: scroll;
+}
+
 .flexContainer{
     height: 260vh;
     width: 100%;
@@ -7,7 +12,7 @@
 }
 
 .skillsWrapper {
-    max-width: 1200px;
+    //max-width: 1200px;
     width: 75%;
     display: flex;
     justify-content: space-between;
