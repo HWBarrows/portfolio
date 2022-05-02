@@ -1,0 +1,43 @@
+.menu {
+  position: fixed;
+  top: 1em;
+  right: 2.5vw;
+  width: 90px;
+  z-index: 2;
+}
+
+.show {
+  margin-top: 1em;
+  display: block;
+}
+
+.show li {
+  background-color: white;
+  list-style: none;
+  height: 1.5em;
+  padding-top: .5em;
+  padding-left: .5em;
+}
+
+.show li:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-box-shadow: 1px 5px 4px -1px rgba(0, 0, 0, 0.46);
+  box-shadow: 1px 5px 4px -1px rgba(0, 0, 0, 0.46);
+}
+
+.show li a {
+  color: #41B2BA;
+  text-decoration: none;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.burger {
+  color: #41B2BA;
+  padding-left: .25em;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=NavBar.css.map */

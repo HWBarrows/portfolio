@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+@font-face {
+  font-family: HaarlemDeco;
+  src: url("../assets/fonts/HaarlemDeco.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Halosense;
+  src: url("../assets/fonts/Halosense/Halosense-Regular.otf");
+  font-weight: normal;
+}
+
+body {
+  width: 99%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.happyAppy {
+  position: relative;
+  max-width: 1600px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=App.css.map */
