@@ -5,11 +5,14 @@ import './Contact.scss'
 
 const REALM_APP_ID = "mailserver-pnqaa"
 const app = new Realm.App({id: REALM_APP_ID})
+const client = app.currentUser.mongoClient('mongodb-atlas')
+const mails = client.db('sentMessages').collection('mails')
 
 async function login (){
+    
     try {
         const user = await app.logIn(Realm.Credentials.anonymous())
-        console.log(user);
+        
         return user
      } catch (error){
          console.log("failed to log in", error)
@@ -23,48 +26,43 @@ export default  function ContactForm (){
     const [ sendEmail, setSendEmail ] = useState("")
     const [ sendMessage, setSendMessage ] = useState("")
 
-    const client = app.currentUser.mongoClient('mongodb-atlas')
-    const mails = client.db('sentMessages').collection('mails')
-    
-    const sendMails = () => {
-        mails.insertOne({
-            name: sendName,
-            email: sendEmail,
-            content: sendMessage
-        })
-    }
-    
     const handleSubmit = (e) => {
-        e.preventDefault()
-            // const config = {
-            //     method:"POST",
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify({
-            //         name: sendName,
-            //         email: sendEmail,
-            //         content: sendMessage
-            //     })
-            // }
-
-        // fetch(`http://localhost:${port}/messages`, config)
-        // .then(response => response.json())
-        // .then(response => console.log(response))
-        // .catch(error => console.log(error.message))
-        
-        // const sendMails = () => {
-        //     mails.insertOne({
-        //         name: sendName,
-        //         email: sendEmail,
-        //         content: sendMessage
-        //     })
-        // }
-        sendMails()
-        setSendName("")
-        setSendEmail("")
-        setSendMessage("")
+            e.preventDefault()
+                const config = {
+                    method:"POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'api-key': `${process.env.REACT_APP_CRED}`
+                    },
+                    body: JSON.stringify({
+                        name: sendName,
+                        email: sendEmail,
+                        content: sendMessage
+                    })
+                }
+    
+            fetch(`https://data.mongodb-api.com/app/mailserver-pnqaa/endpoint/mail`, config)
+            .then(response => response.json())
+            .then(response => console.log(response))
+            .catch(error => console.log(error.message))
     }
+    // const client = app.currentUser.mongoClient('mongodb-atlas')
+    // const mails = client.db('sentMessages').collection('mails')
+    
+    
+    //     sendMails()
+    //     setSendName("")
+    //     setSendEmail("")
+    //     setSendMessage("")
+    // }
+
+    // const sendMails = () => {
+    //         mails.insertOne({
+    //             name: sendName,
+    //             email: sendEmail,
+    //             content: sendMessage
+    //         })
+        
 
     return(
         <div className='formWrapper'>
