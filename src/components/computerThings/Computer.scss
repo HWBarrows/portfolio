@@ -3,17 +3,16 @@
     background-color: white;
     padding-right: 2em;
     padding-left: 2em;
-    width:95vw;
 
     .stickyTitle{
         padding-top: 1.5em;
         background-color: white;
-        height: 8em;
+        height: 12.5vh;
         position: sticky;
         top: 0;
         
         h1{
-            padding-bottom: 1.5em;
+            padding-bottom: 1em;
         }
     }
 
@@ -23,35 +22,29 @@
     }
 }
 
-.skills {
-    padding-top: 3em;
-    //height: 100vh;
-    //display: flex;
-    //align-items: center;
+.social {
+    padding-top: 20vh;
+}
 
-    h2{
-        display: inline-block;
-        margin-right: 5px;
-    }
+.digital {
+    padding-top:1em;
 }
 
 .listWrapper {
     //border: 1px solid fuchsia;
-    //height: 10vh;
+    height: 10vh;
     margin-top: 5em;
     margin-bottom: 5em;
-    padding-right: 1em;
-    padding-left: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-       
+        ul {
+            // display: inline-block;
             li {
                 list-style:circle;
-                
-                //text-align:justify;
+                text-align:justify;
             }
-        
+        }
 }
 
 .projectWrapper {
@@ -97,8 +90,8 @@
     background-image: url('../../assets/goddesses.png');
     background-size: cover;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+    position: sticky;
+    top: 10vh;
 }
 
 .snapTwo {
@@ -106,8 +99,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+    position: sticky;
+    top: 10vh;
 }
 
 .snapThree {
@@ -115,49 +108,44 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+    position: sticky;
+    top: 10vh;
 }
 .snapFour {
     background-image: url('../../assets/sweet.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+    position: sticky;
+    top: 10vh;
 }
 
 .stacking{
     //border: 2px solid orange;
     height: 5.5vh;
-    padding-bottom: 1em;
-    width:40vw;
+    
 }
 
 
 .title1{
     position: sticky;
-    top:3em;
-    // top:10vh;
+    top:10vh;
 }
 
 .title2{
     position: sticky;
-    top:4.5em;
-    // top:15vh;
+    top:15vh;
 }
 
 .title3{
     position: sticky;
-    top:6em;
-    // top:20vh;
+    top:20vh;
 }
 
 .title4{
     
     position: sticky;
-    top:7.5em;
-    // top:25vh;
+    top:25vh;
 }
 
 
