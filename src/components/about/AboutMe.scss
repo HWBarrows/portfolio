@@ -19,11 +19,21 @@ $hbaqua: #41B2BA;
     margin-top: 90vh;
     //margin-bottom: 10em;
     padding: 2em;
-    height: 60vh;
+    text-align: justify;
     width:50%;
-    background-color: rgba(0, 0, 0, 0.887);
+    background-color: rgba(0, 0, 0, 0.902);
     position: sticky;
     top: 20vh;
     z-index: 1;
+    color: whitesmoke;
+
+    p{
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    h4{
+        text-align: center;
+    }
 }
 
