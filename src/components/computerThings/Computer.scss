@@ -5,18 +5,6 @@
     padding-left: 2em;
     //width:95vw;
 
-    .stickyTitle{
-        padding-top: 1.5em;
-        background-color: white;
-        height: 12.5vh;
-        position: sticky;
-        top: 0;
-        
-        h1{
-            padding-bottom: 1em;
-        }
-    }
-
     h2{
         background-color: white;
         //width:50%;
@@ -32,8 +20,6 @@
 }
 
 .listWrapper {
-    //border: 1px solid fuchsia;
-    height: 10vh;
     margin-top: 5em;
     margin-bottom: 5em;
     display: flex;
@@ -43,6 +29,7 @@
             li {
                 list-style:circle;
                 text-align:justify;
+                margin:1em;
             }
         
 }
@@ -56,11 +43,21 @@
     
     
 }
+
+.stickyTitle{
+    padding-top: 1.5em;
+    background-color: white;
+    height: 4em;
+    position: sticky;
+    top: 0;
+    width:50%
+}
 .contentWrapper {
-    
+    //border: 1px solid fuchsia;
     display: flex;
     height: 80vh;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -69,11 +66,14 @@
     background-color: white;
     display: flex;
     justify-content: center;
+    border:1px solid black;
     
     p{
-        margin-top: 20vh;
+        //margin-top: 20vh;
         background-color: white;
         text-align: justify;
+        border:1px solid aqua;
+        height: 10vh;
     }
  }
 .snapshot {
@@ -124,7 +124,7 @@
     //border: 2px solid orange;
     height: 5.5vh;
     padding-bottom: 1em;
-    width: 40vw;
+    width: 50%;
 }
 
 
@@ -151,6 +151,9 @@
 
 
 @media screen and (max-width: 850px){
+    .stickyTitle{
+        width:100%;
+    }
     .stacking {
         width: 100%;
     }

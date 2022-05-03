@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 
-const REALM_APP_ID = "mailserver-pnqaa"
-const app = new Realm.App({id: REALM_APP_ID})
-const client = app.currentUser.mongoClient('mongodb-atlas')
-const mails = client.db('sentMessages').collection('mails')
+// const REALM_APP_ID = "mailserver-pnqaa"
+// const app = new Realm.App({id: REALM_APP_ID})
+// const client = app.currentUser.mongoClient('mongodb-atlas')
+// const mails = client.db('sentMessages').collection('mails')
 
-async function login (){
+// async function login (){
     
-    try {
-        const user = await app.logIn(Realm.Credentials.anonymous())
+//     try {
+//         const user = await app.logIn(Realm.Credentials.anonymous())
         
-        return user
-     } catch (error){
-         console.log("failed to log in", error)
-     }
-}
+//         return user
+//      } catch (error){
+//          console.log("failed to log in", error)
+//      }
+// }
 
 export default function ContactForm (){
 
