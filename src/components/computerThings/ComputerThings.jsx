@@ -1,8 +1,8 @@
 import './Computer.scss'
 
-export default function ComputerThings() {
+export default function ComputerThings({skillsRef}) {
     return(
-        <div className="computerWrapper">
+        <div className="computerWrapper" ref={skillsRef}>
             {/* <div className='stickyTitle'>
              <h1>Skills</h1>
             </div> */}

@@ -1,8 +1,10 @@
 import './AboutMe.scss'
+import React, { forwardRef, useRef } from 'react'
 
-export default function AboutMe(){
+export default function AboutMe (){
+    
     return(
-        <div className="aboutWrapper" id="seeMe">
+        <div className="aboutWrapper">
             
             <div className='summary'>
                 <h1>About</h1>

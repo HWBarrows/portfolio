@@ -1,38 +1,44 @@
 import './HomePage.scss'
-// import React, { useState } from 'react'
-// import AboutMe from './AboutMe.jsx'
 import AboutMe from '../about/AboutMe.jsx'
 import ComputerThings from '../computerThings/ComputerThings.jsx'
 import Contact from '../contact/Contact.jsx'
+import NavBar from '../navBar/NavBar.jsx'
+import React, { useRef } from 'react'
 
 
 export default function HomePage() {
-  
-    // const [ extend, setExtend ] = useState(false) 
-    
-    // const showOff = ()=> {
-    //     setExtend(!extend)
-    // }
+    const homeRef = useRef(null)
+    const aboutRef = useRef(null)
+    const skillsRef = useRef(null)
+    const contactRef = useRef(null)
+    const skWrpRef = useRef(null)
+    const scrollToElement = (reference)=> reference.current.scrollIntoView({behavior:"smooth"})
+    const scrollToCenter = (reference) => reference.current.scrollIntoView({behavior:"smooth"})
 
     return (
-        <div className='snapContainer'>
-            
+        <div>
+            {/* <NavBar/> */}
+            <ul>
+                <li onClick={ () => scrollToElement(aboutRef)}>Hi everybody</li>
+                <li></li>
+                <li></li>
+            </ul>
 
-            <div className="flexContainer">
-                <div className='prettyWords'>  
-                </div>
-                <div className='skillsWrapper'>
-                <div className='skillsColl1'>web</div>
-                <div className='skillsColl1'>dev</div>
+            <div className="flexContainer" onClick={ ()=> scrollToCenter(skWrpRef)}>
+                <div className='prettyWords' ref={homeRef}></div>  
+                
+                <div className='skillsWrapper' >
+                    <div className='skillsColl1' ref={skWrpRef}>web</div>
+                    <div className='skillsColl1'>dev</div>
                 </div>
             </div>
-            {/* <div className='prettyBoxes'></div> */}
+           <span ref={aboutRef}/>
              <AboutMe/> 
+            <span ref={skillsRef}/>
              <ComputerThings/>
+             <span ref={contactRef}/>
              <Contact/>
-             {/* this is where the other components can be imported and returned as part of an extend page */}
-                {/* useReducer can collect the states of the different elements so that once opened stays open unless 
-                explicitly told to close */}
+             
         </div>
     )
     

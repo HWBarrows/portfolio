@@ -12,20 +12,22 @@ $hbaqua: #41B2BA;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 .summary {
-    margin-top: 90vh;
+    margin-top: 5em;
     //margin-bottom: 10em;
     padding: 2em;
     text-align: justify;
     width:50%;
     background-color: rgba(0, 0, 0, 0.902);
-    position: sticky;
+    //position: sticky;
     top: 20vh;
-    z-index: 1;
+    //z-index: 1;
     color: whitesmoke;
+    scroll-snap-align: start;
 
     p{
         margin-top: .5em;
