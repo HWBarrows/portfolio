@@ -8,7 +8,7 @@ export default function ComputerThings({skillsRef}) {
             </div> */}
                 <div className='social'>
                     <h2>Soft Skills</h2>
-                    <p>With over 10 years of professional experience as a production coordinator in countries including China, Denmark, and Germany, below are some of the key areas in which I excel: </p>
+                    <p>Working as a production coordinator for more than 10 years in countries including China, Denmark, and Germany, I gained valuable experience in: </p>
                     
                     <ul className='listWrapper'>
                         
@@ -44,8 +44,9 @@ export default function ComputerThings({skillsRef}) {
 
                 <div className='stickyTitle'>
                     <h1>Projects</h1>
+                    
                 </div>
-
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sed beatae illum quia accusantium rem officia? Nemo blanditiis necessitatibus temporibus qui impedit cumque aliquid, laboriosam culpa rem laudantium hic autem, odit exercitationem magnam explicabo nulla quibusdam sapiente nisi deserunt et doloribus nesciunt repudiandae. Blanditiis quidem dicta aliquam. Hic, quia eum!</p>
                     <div className='projectWrapper'>
                             <h2 className='title1 stacking'>Goddess Gallery</h2>
                         <div className='contentWrapper'>
