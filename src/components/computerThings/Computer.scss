@@ -1,9 +1,7 @@
 .computerWrapper {
     //border: 2px solid fuchsia;
     background-color: white;
-    padding-right: 2em;
-    padding-left: 2em;
-    //width:95vw;
+    padding:2em;
 
     h2{
         background-color: white;
@@ -12,11 +10,18 @@
 }
 
 .social {
-    padding-top: 20vh;
+    margin: 2em;
+    p{
+        text-align: justify;
+    }
 }
 
-.digital {
-    padding-top:1em;
+.iconic {
+    h2{
+        display: inline-block;
+        margin:1.5em;
+    }
+    
 }
 
 .listWrapper {
@@ -55,9 +60,10 @@
 .contentWrapper {
     //border: 1px solid fuchsia;
     display: flex;
-    height: 80vh;
+    //height: 80vh;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5em;
 }
 
 
@@ -65,14 +71,15 @@
     width: 50%;
     background-color: white;
     display: flex;
-    justify-content: center;
-    border:1px solid black;
+    flex-direction: column;
+    gap:2em;
+    //border:1px solid black;
     
     p{
         //margin-top: 20vh;
         background-color: white;
         text-align: justify;
-        border:1px solid aqua;
+        //border:1px solid aqua;
         //height: 10vh;
     }
  }
@@ -122,8 +129,10 @@
 
 .stacking{
     //border: 2px solid orange;
-    height: 5.5vh;
-    padding-bottom: 1em;
+    margin-top: 1em;
+    height:2.5em;
+    // height: 5.5vh;
+    //padding-bottom: 1em;
     width: 50%;
 }
 

@@ -1,20 +1,5 @@
 import React, { useState } from 'react'
 
-// const REALM_APP_ID = "mailserver-pnqaa"
-// const app = new Realm.App({id: REALM_APP_ID})
-// const client = app.currentUser.mongoClient('mongodb-atlas')
-// const mails = client.db('sentMessages').collection('mails')
-
-// async function login (){
-    
-//     try {
-//         const user = await app.logIn(Realm.Credentials.anonymous())
-        
-//         return user
-//      } catch (error){
-//          console.log("failed to log in", error)
-//      }
-// }
 
 export default function ContactForm (){
 
@@ -27,37 +12,27 @@ export default function ContactForm (){
                 const config = {
                     method:"POST",
                     headers: {
-                        'Content-Type': 'application/json',
-                        'api-key': `${process.env.REACT_APP_CRED}`
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
                         name: sendName,
                         email: sendEmail,
-                        content: sendMessage
+                        message: sendMessage
                     })
                 }
     
-            fetch(`https://data.mongodb-api.com/app/mailserver-pnqaa/endpoint/mail`, config)
+            fetch(`https://queenstea.herokuapp.com/messages`, config)
             .then(response => response.json())
             .then(response => console.log(response))
             .catch(error => console.log(error.message))
+            
+            setSendName("")
+            setSendEmail("")
+            setSendMessage("")
     }
-    // const client = app.currentUser.mongoClient('mongodb-atlas')
-    // const mails = client.db('sentMessages').collection('mails')
     
     
-    //     sendMails()
-    //     setSendName("")
-    //     setSendEmail("")
-    //     setSendMessage("")
-    // }
-
-    // const sendMails = () => {
-    //         mails.insertOne({
-    //             name: sendName,
-    //             email: sendEmail,
-    //             content: sendMessage
-    //         })
+    
         
 
     return(
