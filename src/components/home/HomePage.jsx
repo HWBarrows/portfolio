@@ -1,11 +1,10 @@
-import { NavLink } from "react-router-dom"
 import React, { useState, useRef } from 'react'
 import { GoThreeBars} from "react-icons/go";
 import './HomePage.scss'
 import AboutMe from '../about/AboutMe.jsx'
 import ComputerThings from '../computerThings/ComputerThings.jsx'
 import Contact from '../contact/Contact.jsx'
-import Skills from "../skills/Skills.jsx";
+
 
 
 export default function HomePage() {
@@ -18,7 +17,7 @@ export default function HomePage() {
     const contactRef = useRef(null)
     
     const scrollToElement = (reference)=> reference.current.scrollIntoView({behavior:"smooth"})
-    const scrollToCenter = (reference) => reference.current.scrollIntoView({behavior:"smooth"})
+    
 
     return (
         <div>
@@ -43,8 +42,8 @@ export default function HomePage() {
             </div>
             <span ref={aboutRef}/>
              <AboutMe/> 
-            <span ref={skillsRef}/>
-            <Skills/>
+            {/* <span ref={skillsRef}/>
+            <Skills/> */}
             <span ref={projectRef}/>
              <ComputerThings/>
             <span ref={contactRef}/>

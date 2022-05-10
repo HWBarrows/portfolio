@@ -1,5 +1,5 @@
 .computerWrapper {
-    //border: 2px solid fuchsia;
+    border: 2px solid white;
     background-color: white;
     padding:2em;
     h2{
@@ -15,31 +15,50 @@
     justify-content: space-between; 
 }
 
+.projectIntro {
+    width:90%;
+    text-align: justify;
+    a{  
+        color: #0e9aa4;
+        text-decoration: none;
+        &:hover {
+            color: rgb(218, 79, 218);
+        }
+    }
+
+}
 .stickyTitle{
     padding-top: 1.5em;
     background-color: white;
     height: 4em;
     position: sticky;
     top: 0;
-    width:50%
+    width:100%
 }
 .contentWrapper {
     //border: 1px solid fuchsia;
     display: flex;
     //height: 80vh;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 5em;
 }
 
 
  .text {
-    width: 50%;
+    width: 45%;
     background-color: white;
     display: flex;
     flex-direction: column;
     gap:2em;
     
+    a{  
+        color: #0e9aa4;
+        text-decoration: none;
+        &:hover {
+            color: rgb(218, 79, 218);
+        }
+    }
     p{
         
         background-color: white;
@@ -52,14 +71,14 @@
     width: 40%;
     border: 1em solid white;
     background-color: white;
+    z-index: 1;
 }
 
 .snapOne {
     background-image: url('../../assets/goddesses.png');
     background-size: cover;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+    
 }
 
 .snapTwo {
@@ -67,8 +86,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+   
 }
 
 .snapThree {
@@ -76,34 +94,35 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+    
 }
 .snapFour {
     background-image: url('../../assets/sweet.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+   
 }
 
 .stacking{
-    //border: 2px solid orange;
     margin-top: 1em;
     height:2.5em;
-    // height: 5.5vh;
-    //padding-bottom: 1em;
-    width: 50%;
+    width: 100%;
+
+    &:hover{
+        text-decoration: underline;
+        color: rgb(218, 79, 218);
+    }
 }
 
 .active {
-    color:#CD6479;
     text-decoration: underline;
+    color: rgb(218, 79, 218);
 }
 
-.inactive {
-    color: grey;
+.bottomLink{
+    margin-top: 5em;
+    align-self: center;
 }
 
 
@@ -146,6 +165,7 @@
     .snapshot {
         width:80%;
         margin-bottom: 2em;
+        z-index: auto;
     }
     
 }

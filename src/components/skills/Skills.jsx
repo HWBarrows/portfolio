@@ -1,3 +1,4 @@
+import { IconContext } from "react-icons";
 import { GrGroup } from 'react-icons/gr';
 import { RiComputerLine } from 'react-icons/ri'
 import './Skills.scss'
@@ -14,8 +15,8 @@ export default function Skills () {
                     <h2>Soft Skills</h2>
                     <GrGroup/>
                 </div>
-                    <p>My transition to a new career in tech was greatly supported by my previous experience in project management.
-                    By working as a production coordinator for more than 10 years in countries including China, Denmark, and Germany, I gained valuable experience in: </p>
+                    {/* <p>My transition to a new career in tech was greatly supported by my previous experience in project management.
+                    By working as a production coordinator for more than 10 years in countries including China, Denmark, and Germany, I gained valuable experience in: </p> */}
                     
                     <ul className='listWrapper'>
                         
@@ -36,7 +37,7 @@ export default function Skills () {
                     <h2>Hard Skills</h2>
                     <RiComputerLine/>
                 </div>
-                    <p>The only way to improve any skill is to practice, and practice I have. Because I've created web apps of various complexities and used systematic problem solving techniques, including stack trace analysis and debugging, I'm proficient in the following areas:</p>
+                    {/* <p>The only way to improve any skill is to practice, and practice I have. Because I've created web apps of various complexities and used systematic problem solving techniques, including stack trace analysis and debugging, I'm proficient in the following areas:</p> */}
                     <ul className='listWrapper'>
                             
                             <li>HTML</li>
