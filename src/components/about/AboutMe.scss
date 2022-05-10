@@ -4,7 +4,7 @@ $hbaqua: #41B2BA;
 .aboutWrapper {
     //min-height: 100vh;
     width: 100%;
-    background-image: url('../../assets//redo.png');
+    background-image: url('../../assets/redoTiny.png');
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -12,8 +12,7 @@ $hbaqua: #41B2BA;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    scroll-snap-type: y mandatory;
-    //overflow-y: scroll;
+    
 }
 
 .summary {
