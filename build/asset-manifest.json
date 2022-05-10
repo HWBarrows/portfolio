@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.06739bf2.css",
-    "main.js": "/static/js/main.53209da8.js",
-    "static/media/arturo-castaneyra-7laIG_Xv5FI-unsplash.jpg": "/static/media/arturo-castaneyra-7laIG_Xv5FI-unsplash.b147444e23e14a93cbcd.jpg",
-    "static/media/texting.jpg": "/static/media/texting.57f6774bc154ffa65a57.jpg",
+    "main.css": "/static/css/main.14649c18.css",
+    "main.js": "/static/js/main.5ac9b0ee.js",
     "static/media/goddesses.png": "/static/media/goddesses.26ed06860bdcd4bcb938.png",
     "static/media/sweet.png": "/static/media/sweet.7dd841b3bc00990d5391.png",
     "static/media/softerEdge.png": "/static/media/softerEdge.fb846d26a9494774e7a4.png",
+    "static/media/textingTiny.png": "/static/media/textingTiny.0ad737f4523f5957ba68.png",
     "static/media/wuForever.png": "/static/media/wuForever.776a69c450d9c8105d8d.png",
     "static/media/Halosense-Regular.otf": "/static/media/Halosense-Regular.ef6272526893a6b09143.otf",
     "static/media/HaarlemDeco.ttf": "/static/media/HaarlemDeco.270b63012d585435fdf5.ttf",
+    "static/media/redoTiny.png": "/static/media/redoTiny.b8226053ec8fdde90ddd.png",
     "static/media/tipcal.png": "/static/media/tipcal.fe982d5f7d389f254f43.png",
     "index.html": "/index.html",
-    "main.06739bf2.css.map": "/static/css/main.06739bf2.css.map",
-    "main.53209da8.js.map": "/static/js/main.53209da8.js.map"
+    "main.14649c18.css.map": "/static/css/main.14649c18.css.map",
+    "main.5ac9b0ee.js.map": "/static/js/main.5ac9b0ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.06739bf2.css",
-    "static/js/main.53209da8.js"
+    "static/css/main.14649c18.css",
+    "static/js/main.5ac9b0ee.js"
   ]
 }
