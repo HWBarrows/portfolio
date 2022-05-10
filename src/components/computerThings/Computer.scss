@@ -1,37 +1,10 @@
 .computerWrapper {
-    //border: 2px solid fuchsia;
+    border: 2px solid white;
     background-color: white;
-    padding-right: 2em;
-    padding-left: 2em;
-    //width:95vw;
-
+    padding:2em;
     h2{
         background-color: white;
-        //width:50%;
     }
-}
-
-.social {
-    padding-top: 20vh;
-}
-
-.digital {
-    padding-top:1em;
-}
-
-.listWrapper {
-    margin-top: 5em;
-    margin-bottom: 5em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-        
-            li {
-                list-style:circle;
-                text-align:justify;
-                margin:1em;
-            }
-        
 }
 
 .projectWrapper {
@@ -39,59 +12,73 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between; 
 }
 
+.projectIntro {
+    width:90%;
+    text-align: justify;
+    a{  
+        color: #0e9aa4;
+        text-decoration: none;
+        &:hover {
+            color: rgb(218, 79, 218);
+        }
+    }
+
+}
 .stickyTitle{
     padding-top: 1.5em;
     background-color: white;
     height: 4em;
     position: sticky;
     top: 0;
-    width:50%
+    width:100%
 }
 .contentWrapper {
     //border: 1px solid fuchsia;
     display: flex;
-    height: 80vh;
-    justify-content: space-between;
+    //height: 80vh;
+    justify-content: space-around;
     align-items: center;
+    margin-bottom: 5em;
 }
 
 
  .text {
-    width: 50%;
+    width: 45%;
     background-color: white;
     display: flex;
-    justify-content: center;
-    border:1px solid black;
+    flex-direction: column;
+    gap:2em;
     
+    a{  
+        color: #0e9aa4;
+        text-decoration: none;
+        &:hover {
+            color: rgb(218, 79, 218);
+        }
+    }
     p{
-        //margin-top: 20vh;
+        
         background-color: white;
         text-align: justify;
-        border:1px solid aqua;
-        height: 10vh;
+        //border:1px solid aqua;
     }
  }
 .snapshot {
     height: 50vh;
     width: 40%;
-    // min-width: 250px;
-    // min-height: 180px;
     border: 1em solid white;
     background-color: white;
-    //box-sizing: border-box;
+    z-index: 1;
 }
 
 .snapOne {
     background-image: url('../../assets/goddesses.png');
     background-size: cover;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+    
 }
 
 .snapTwo {
@@ -99,8 +86,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+   
 }
 
 .snapThree {
@@ -108,42 +94,54 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+    
 }
 .snapFour {
     background-image: url('../../assets/sweet.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    // position: sticky;
-    // top: 10vh;
+   
 }
 
 .stacking{
-    //border: 2px solid orange;
-    height: 5.5vh;
-    padding-bottom: 1em;
-    width: 50%;
+    margin-top: 1em;
+    height:2.5em;
+    width: 100%;
+
+    &:hover{
+        text-decoration: underline;
+        color: rgb(218, 79, 218);
+    }
+}
+
+.active {
+    text-decoration: underline;
+    color: rgb(218, 79, 218);
+}
+
+.bottomLink{
+    margin-top: 5em;
+    align-self: center;
 }
 
 
-.title1{
+#title1{
     position: sticky;
     top:3em;
 }
 
-.title2{
+#title2{
     position: sticky;
     top:4.5em;
 }
 
-.title3{
+#title3{
     position: sticky;
     top:6em;
 }
 
-.title4{
+#title4{
     
     position: sticky;
     top:7.5em;
@@ -167,6 +165,7 @@
     .snapshot {
         width:80%;
         margin-bottom: 2em;
+        z-index: auto;
     }
     
 }

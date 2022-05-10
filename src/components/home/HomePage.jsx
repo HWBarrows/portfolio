@@ -1,38 +1,54 @@
+import React, { useState, useRef } from 'react'
+import { GoThreeBars} from "react-icons/go";
 import './HomePage.scss'
-// import React, { useState } from 'react'
-// import AboutMe from './AboutMe.jsx'
 import AboutMe from '../about/AboutMe.jsx'
 import ComputerThings from '../computerThings/ComputerThings.jsx'
 import Contact from '../contact/Contact.jsx'
 
 
+
 export default function HomePage() {
-  
-    // const [ extend, setExtend ] = useState(false) 
+    const [visibility, setVisibility] = useState(false)
+
+    const homeRef = useRef(null)
+    const aboutRef = useRef(null)
+    const skillsRef = useRef(null)
+    const projectRef = useRef(null)
+    const contactRef = useRef(null)
     
-    // const showOff = ()=> {
-    //     setExtend(!extend)
-    // }
+    const scrollToElement = (reference)=> reference.current.scrollIntoView({behavior:"smooth"})
+    
 
     return (
-        <div className='snapContainer'>
-            
-
+        <div>
+            <span ref={homeRef}/>
+            <div className='menu' >
+            <GoThreeBars className="burger" onClick={()=> setVisibility(!visibility)}/>  
+            <ul className={visibility? "show": "hide"}>
+                <li onClick={ () => scrollToElement(homeRef)}>Home</li>
+                <li onClick={ () => scrollToElement(aboutRef)}>About</li>
+                <li onClick={ () => scrollToElement(skillsRef)}>Skills</li>
+                <li onClick={ () => scrollToElement(projectRef)}>Projects</li>
+                <li onClick={ () => scrollToElement(contactRef)}>Contact</li>
+            </ul>
+            </div>
             <div className="flexContainer">
-                <div className='prettyWords'>  
-                </div>
-                <div className='skillsWrapper'>
-                <div className='skillsColl1'>web</div>
-                <div className='skillsColl1'>dev</div>
+                <div className='prettyWords'></div>  
+                
+                <div className='skillsWrapper' >
+                    <div className='skillsColl1'>web</div>
+                    <div className='skillsColl1'>dev</div>
                 </div>
             </div>
-            {/* <div className='prettyBoxes'></div> */}
+            <span ref={aboutRef}/>
              <AboutMe/> 
+            {/* <span ref={skillsRef}/>
+            <Skills/> */}
+            <span ref={projectRef}/>
              <ComputerThings/>
+            <span ref={contactRef}/>
              <Contact/>
-             {/* this is where the other components can be imported and returned as part of an extend page */}
-                {/* useReducer can collect the states of the different elements so that once opened stays open unless 
-                explicitly told to close */}
+             
         </div>
     )
     

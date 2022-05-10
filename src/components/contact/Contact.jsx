@@ -1,10 +1,10 @@
 import Form from './Form.jsx'
 import './Contact.scss'
 
-export default function Contact (){
+export default function Contact ({contactRef}){
     return (
         <div>
-            <div className='contactWrapper'>
+            <div className='contactWrapper' ref={contactRef}>
               <Form/>  
               <div className='icons'>
                   <div></div>
