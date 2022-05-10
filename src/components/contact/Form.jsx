@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 
-
 export default function ContactForm (){
 
     const [ sendName, setSendName ] = useState("")
@@ -26,11 +25,13 @@ export default function ContactForm (){
             .then(response => response.json())
             .then(response => console.log(response))
             .catch(error => console.log(error.message))
-
+            
             setSendName("")
             setSendEmail("")
             setSendMessage("")
     }
+    
+    
     
         
 

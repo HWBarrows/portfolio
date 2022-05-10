@@ -2,7 +2,7 @@ $hbpink:#CD6479;
 $hbaqua: #41B2BA;
 
 .aboutWrapper {
-    height: 200vh;
+    //min-height: 100vh;
     width: 100%;
     background-image: url('../../assets//redo.png');
     background-size: cover;
@@ -12,28 +12,69 @@ $hbaqua: #41B2BA;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    //overflow-y: scroll;
 }
 
 .summary {
-    margin-top: 90vh;
-    //margin-bottom: 10em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    margin-right: 5em;
     padding: 2em;
     text-align: justify;
     width:50%;
-    background-color: rgba(0, 0, 0, 0.902);
-    position: sticky;
+    background-color: rgba(0, 0, 0, 0.939);
+    //position: sticky;
     top: 20vh;
-    z-index: 1;
+    //z-index: 1;
     color: whitesmoke;
+    scroll-snap-align: start;
+    border-radius: 5px;
 
     p{
-        margin-top: .5em;
-        margin-bottom: .5em;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
     }
 
     h4{
         text-align: center;
+        margin-bottom: 2em;
     }
+}
+
+.top-react-icons{
+    font-size: 2rem;
+    color: white;
+  }
+.social {
+    border-radius: 5px;
+    display: block;
+    p{
+        text-align: justify;
+    }
+}
+
+.iconic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border: 1px solid green;
+    h2{
+        display: inline-block;
+        margin:1.5em;
+    }
+}
+
+.listWrapper {
+   // margin-top: 3em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+            li {
+                list-style:circle;
+                text-align:justify;
+                margin:1em;
+            }
 }
 
