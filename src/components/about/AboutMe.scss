@@ -1,35 +1,34 @@
 $hbpink:#CD6479;
 $hbaqua: #41B2BA;
 
+
 .aboutWrapper {
-    //min-height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background-image: url('../../assets/redoTiny.png');
+    background-image: url('../../assets/nyskyline.png');
     background-size: cover;
     background-position: bottom;
-    background-attachment: fixed;
     color: whitesmoke;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    span {
+        color: #41B2BA
+    }
     
 }
 
 .summary {
-    margin-top: 10em;
-    margin-bottom: 10em;
-    margin-right: 5em;
+    
+    margin-bottom: 5em;
     padding: 2em;
     text-align: justify;
-    width:50%;
-    background-color: rgba(0, 0, 0, 0.939);
-    //position: sticky;
-    top: 20vh;
-    //z-index: 1;
     color: whitesmoke;
-    scroll-snap-align: start;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.939);
+    box-sizing: border-box;
     border-radius: 5px;
-
     p{
         margin-top: 1.5em;
         margin-bottom: 1.5em;
@@ -41,17 +40,25 @@ $hbaqua: #41B2BA;
     }
 }
 
+.noShow {
+    display: none;
+}
+
 .top-react-icons{
     font-size: 2rem;
     color: white;
   }
-.social {
-    border-radius: 5px;
-    display: block;
-    p{
-        text-align: justify;
-    }
-}
+// .social {
+//     border-radius: 5px;
+//     padding-left: 2em;
+//     padding-right: 2em;
+//     box-sizing: border-box;
+//     color: whitesmoke;
+//     width: 80%;
+//     background-color: rgba(0, 0, 0, 0.939);
+//     display: none;
+
+// }
 
 .iconic {
     display: flex;
@@ -66,10 +73,16 @@ $hbaqua: #41B2BA;
 
 .listWrapper {
    // margin-top: 3em;
-    padding-bottom: 3em;
+    //padding-bottom: 3em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+        ul:last-of-type{
+                margin-bottom: 5em;
+            }
+            
+        
             li {
                 list-style:circle;
                 text-align:justify;

@@ -5,24 +5,38 @@ $hbaqua: #41B2BA;
 .menu {
     //border:1px solid fuchsia;
     position: fixed;
+    display: flex;
+    gap: .5em;
+    flex-direction: column;
+    align-items:center;
     top: 1em;
-    right: 2.5vw;
+    right: 10vw;
     width: 90px;
+    overflow: visible;
     z-index: 2;
+
+    .burger {
+        justify-self: right;
+    }
 }
 
 .show {
     margin-top: 1em;
-    display: block;
+    // visibility: visible;
+    // opacity: 1;
+    // transition: visibility 0s linear 0s, opacity 300ms;
 
     li {
         //border: 1px solid red;
-        //margin: 1em;
-        background-color: white;
+        margin: .5em;
+        display: inline;
+        text-align: left;
+        background-color: #41B2BA;
         list-style: none;
-        height:1.5em;
-        padding-top: .5em;
-        padding-left: .5em;
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+        //height:1.5em;
+        padding:.5em;
         
                 &:hover{
                     
@@ -40,6 +54,7 @@ $hbaqua: #41B2BA;
 
 .hide {
     visibility: hidden;
+    
 }
 
 .burger {

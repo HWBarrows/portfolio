@@ -22,12 +22,11 @@ export default function HomePage() {
     return (
         <div>
             <span ref={homeRef}/>
-            <div className='menu' >
-            <GoThreeBars className="burger" onClick={()=> setVisibility(!visibility)}/>  
+            <div className='menu'>
+            <GoThreeBars className="burger" onClick={()=> setVisibility(!visibility)}/>
             <ul className={visibility? "show": "hide"}>
                 <li onClick={ () => scrollToElement(homeRef)}>Home</li>
                 <li onClick={ () => scrollToElement(aboutRef)}>About</li>
-                <li onClick={ () => scrollToElement(skillsRef)}>Skills</li>
                 <li onClick={ () => scrollToElement(projectRef)}>Projects</li>
                 <li onClick={ () => scrollToElement(contactRef)}>Contact</li>
             </ul>

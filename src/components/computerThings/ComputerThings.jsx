@@ -29,8 +29,15 @@ export default function ComputerThings({skillsRef}) {
 
                     <div className='contentWrapper'>
                         <div className='projectIntro'>
-                            <p>A <a href='https://www.goodreads.com/quotes/309485-nobody-tells-this-to-people-who-are-beginners-i-wish' target="_blank">quote</a> from the writer and podcast host, Ira Glass, describes the process a creative individual must go through in order to improve in their craft. One can only improve through consistent practice. For me, each time my code breaks is an opportunity to learn more about development. And by creating projects of varying complexities, I've developed greater skills in error catching, API calls, asynchronous programming,responsive design, frameworks, and libraries.</p>
-                            <p>The current site you're visiting, hallieb.tech, is a full-stack, fully responsive web app with a REST API via Mongodb. It build upon lessons learned via a 12 month web development course from DCI Digital Career Institute gGmbH</p>
+                             
+                            <section>"...the most important thing you can do is do a lot of work. Put yourself on a deadline so that every week you will finish one story. It is only by going through a volume of work that you will close that gap, and your work will be as good as your ambitions."<span> 
+                                <br/>
+                                <br/>
+                                <a href='https://www.goodreads.com/quotes/309485-nobody-tells-this-to-people-who-are-beginners-i-wish' target="_blank">-Ira Glass</a></span></section> 
+                            
+                            <p>
+                            For me, each time my code breaks is an opportunity to learn more about development. And by creating projects of varying complexities, I've developed greater skills in error catching, API calls, asynchronous programming,responsive design, frameworks, and libraries.</p>
+                            <p>The current site you're visiting, hallieb.tech, is a full-stack, fully responsive web app with a self constructed REST API via Mongodb. It builds upon lessons learned via a 12 month web development course from DCI Digital Career Institute gGmbH. Below are 4 apps of which I'm especially proud. More projects and codes used can be found at my <a href='https://github.com/HWBarrows'>Github profile.</a></p>
                         </div>
                     </div>
                             
@@ -39,7 +46,7 @@ export default function ComputerThings({skillsRef}) {
                         <div className='contentWrapper' onMouseEnter={()=> setTitle1Style('active')} onMouseLeave={()=> setTitle1Style(null)}>
                         <div className='first text' >
                             <p>The <a href="https://github.com/HWBarrows/gallery-site" target="_blank">original version</a> of this web app was a bootcamp project to practice using flexbox and grid. Unsatisfied with the layout, structure, and overall look, I decided to create something that was more visually appealing.</p>
-                            <p>The result is a full responsive website, constructed with only old school Vanilla JavaScript, composed of images representing my modern interpretation of classic female deities from around the world.</p>
+                            <p>The result is a fully responsive website, constructed with only old school Vanilla JavaScript, composed of images representing my modern interpretation of classic female deities from around the world.</p>
                             <a href='https://hwbarrows.github.io/newGallery/' target="_blank" className='bottomLink'>Link to live site</a>
                             </div>
                         <div className="snapshot snapOne" ref={project1ref}></div>
