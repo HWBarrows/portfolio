@@ -3,12 +3,11 @@ $hbaqua: #41B2BA;
 
 
 .menu {
-    //border:1px solid fuchsia;
     position: fixed;
     display: flex;
     gap: .5em;
     flex-direction: column;
-    align-items:center;
+    align-items:flex-end;
     top: 1em;
     right: 10vw;
     width: 90px;
@@ -17,17 +16,16 @@ $hbaqua: #41B2BA;
 
     .burger {
         justify-self: right;
+        margin-right: .5em;
     }
 }
 
 .show {
     margin-top: 1em;
-    // visibility: visible;
-    // opacity: 1;
-    // transition: visibility 0s linear 0s, opacity 300ms;
+    
 
     li {
-        //border: 1px solid red;
+       
         margin: .5em;
         display: inline;
         text-align: left;
@@ -69,7 +67,7 @@ $hbaqua: #41B2BA;
     width: 100%;
     display: flex;
     justify-content: center;
-    // scroll-behavior: smooth;
+    
 }
 
 .skillsWrapper {
@@ -79,12 +77,12 @@ $hbaqua: #41B2BA;
     justify-content: space-between;
 
     :first-child{
-        //margin-top: 110vh;
+        
         text-align: center;
     }
 
     :last-child{
-        //margin-top: 155vh;    
+           
         text-align: center;
     }
 }
@@ -99,7 +97,6 @@ $hbaqua: #41B2BA;
 }
 
 .prettyWords{
-    // border: 1px solid fuchsia;
     margin-top: 20vh;
     height: 50vh;
     width: 25%;
@@ -132,5 +129,12 @@ $hbaqua: #41B2BA;
     }
     .skillsColl1 {
         font-size: 4em;
+    }
+
+    .show{
+        display:block;
+        li{
+            display: inherit;
+        }
     }
 }
