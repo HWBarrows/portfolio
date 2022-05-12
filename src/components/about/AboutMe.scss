@@ -20,11 +20,11 @@ $hbaqua: #41B2BA;
 }
 
 .summary {
-    
+    margin-top: 5em;
     margin-bottom: 5em;
     padding: 2em;
     text-align: justify;
-    color: whitesmoke;
+    color: lightgray;
     width: 80%;
     background-color: rgba(0, 0, 0, 0.939);
     box-sizing: border-box;
@@ -46,19 +46,9 @@ $hbaqua: #41B2BA;
 
 .top-react-icons{
     font-size: 2rem;
-    color: white;
+    color: lightgray;
   }
-// .social {
-//     border-radius: 5px;
-//     padding-left: 2em;
-//     padding-right: 2em;
-//     box-sizing: border-box;
-//     color: whitesmoke;
-//     width: 80%;
-//     background-color: rgba(0, 0, 0, 0.939);
-//     display: none;
 
-// }
 
 .iconic {
     display: flex;
