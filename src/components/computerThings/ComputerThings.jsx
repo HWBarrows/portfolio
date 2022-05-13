@@ -30,10 +30,10 @@ export default function ComputerThings({skillsRef}) {
                     <div className='contentWrapper'>
                         <div className='projectIntro'>
                              
-                            <section>"...the most important thing you can do is do a lot of work. Put yourself on a deadline so that every week you will finish one story. It is only by going through a volume of work that you will close that gap, and your work will be as good as your ambitions."<span> 
+                            <div className='quote'>"...the most important thing you can do is do a lot of work. Put yourself on a deadline so that every week you will finish one story. It is only by going through a volume of work that you will close that gap, and your work will be as good as your ambitions."<span> 
                                 <br/>
                                 <br/>
-                                <a href='https://www.goodreads.com/quotes/309485-nobody-tells-this-to-people-who-are-beginners-i-wish' target="_blank">-Ira Glass</a></span></section> 
+                                <a href='https://www.goodreads.com/quotes/309485-nobody-tells-this-to-people-who-are-beginners-i-wish' target="_blank">-Ira Glass</a></span></div> 
                             
                             <p>
                             For me, each time my code breaks is an opportunity to learn more about development. And by creating projects of varying complexities, I've developed greater skills in error catching, API calls, asynchronous programming,responsive design, frameworks, and libraries.</p>

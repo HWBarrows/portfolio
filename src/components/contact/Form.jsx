@@ -37,9 +37,7 @@ export default function ContactForm (){
 
     return(
         <div className='formWrapper'>
-            <div className='contactTitle'>
-           <h1>Contact</h1>
-           </div>
+         <p>Or just send a message:</p>
            <form onSubmit={handleSubmit}>
                 <div className='small'>
                     <input type="text" placeholder="Name" value={sendName} onChange={(e)=> setSendName(e.target.value)}/>

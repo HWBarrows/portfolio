@@ -47,17 +47,18 @@ $hbaqua: #41B2BA;
 .top-react-icons{
     font-size: 2rem;
     color: lightgray;
+    margin: 1em;
   }
 
 
 .iconic {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     //border: 1px solid green;
     h2{
-        display: inline-block;
-        margin:1.5em;
+        text-align: center;
     }
 }
 
