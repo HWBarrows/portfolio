@@ -1,7 +1,6 @@
 import './AboutMe.scss'
 import React, { useState } from 'react'
 import { IconContext } from "react-icons";
-import { GrGroup } from 'react-icons/gr';
 import { RiComputerLine, RiTeamLine } from 'react-icons/ri'
 
 export default function AboutMe (){
@@ -24,14 +23,14 @@ export default function AboutMe (){
             <IconContext.Provider value={{ className: "top-react-icons" }}>
             <div className={mySummary}>
                 <h1>About Me</h1>
-                <p> For many years, I worked as a production coordinator in several international cities , including my birthplace of New York. And like many people in recent times, I decided to finally follow my dreams and change careers. In 2021, I enrolled in a full-stack web development course and looked at a JavaScript event object for the first time. Seeing that it was possible to break an event down to the exact pixel clicked, I finally understood the power of programming and was completely hooked.</p>
-                <p>Because project management is an important part of web development, the transition was easier than I imagined. Clear communication, adaptability, critical thinking, and a systematic approach to problem solving are beneficial for working with people and computers. By combining skills in both areas, I aim to create systems that are easy to use for people around the world. <span onClick={()=> changePositions()}>Continue...</span></p>
+                <p>In 2021, I enrolled in a full-stack web development course and looked at a JavaScript event object for the first time. Seeing that it was possible to break an event down to the exact pixel clicked, I finally understood the power of programming and was completely hooked.</p>
+                <p>I grew up in New York City, where I worked as a production coordinator for many years. The skills gained in such an international and high energy environment has made the transition to web development easier than I imagined; clear communication, adaptability, critical thinking, and a systematic approach to problem solving. By combining skills in both areas, I aim to create systems that are easy to use for people around the world. <span onClick={()=> changePositions()}>Continue...</span></p>
                 </div>
                 
                 <div className={lists}>
                 
                  <div className='iconic'>
-                    <h2>Hard Skills</h2>
+                    <h2>Technical Skills</h2>
                     <RiComputerLine/>
                 </div>
                    
@@ -51,7 +50,7 @@ export default function AboutMe (){
                     <hr/>
 
                     <div className='iconic'>
-                    <h2>Soft Skills</h2>
+                    <h2>Social Skills</h2>
                     <RiTeamLine/>
                 </div>
                     <ul className='listWrapper'>
