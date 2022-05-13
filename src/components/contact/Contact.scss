@@ -1,18 +1,18 @@
 .contactWrapper {
-    height: 100vh;
-    //width:98vw;
-    background-image: url('../../assets/textingTiny.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    min-height: 100vh;
+    background-color: #5667b1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .formWrapper {
-    //border:2px solid orange;
-    height: 90vh;
-    width:100%;
-    padding-top: 5vh;
-
+    width: 80%;
+    p{
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
     input {
         outline: none;
         border: none;
@@ -21,36 +21,68 @@
     button {
         width: 150px;
         border-radius: 4px;
-        outline: none;
+        background-color: #41B2BA;
+        outline: salmon;
         border: none;
+        &:hover {
+            background-color: salmon;
+        }
     }
-    
 }
 
 .contactTitle {
-    margin-left: 3vw;
-    width:50%;
-    position: sticky;
-    top:25vh;
-    
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    width:80%;
+}
+
+.contactIconWrapper {
+    //margin-top: 2em;
+    //border: 1px solid red;
+    margin-bottom: 5em;
+    width: 80%;
+    a {
+        text-decoration: none;
+        color: inherit;
+        // &:hover{
+        //     color: salmon;
+        // }
+    }
+}
+
+.iconContext {
+    color: #41B2BA;
+    font-size: 1.25em;
+    &:hover{
+        color: salmon;
+    }
+}
+
+.contactIconic {
+    //border: 1px solid green;
+    height: 35px;
+    width:200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25em;
+    p{
+        display: inline-block;
+    }
 }
 
 form {
-    //border: 2px solid black;
-    padding: 2.5em;
+    // padding: 2.5em;
     display: flex;
     gap: 1em;
     flex-direction: column;
-    position: sticky;
-    top: 45vh;
 }
 
 .small {
-    //border: 1px solid red;
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    width: 40%;
+    width: 100%;
     
     
     input{
@@ -58,14 +90,20 @@ form {
         height: 2em;
         padding: .25em;
         border-radius: 5px;
+        outline: 2px solid #41B2BA;
     }
 }
 
+// .large {
+//     width:80%;
+// }
+
 textarea {
-    width:40%;
+    width:100%;
     padding: .25em;
     border-radius: 5px;
     box-sizing: border-box;
+    outline: 2px solid #41B2BA;
 }
 
 @media screen and (max-width: 700px){
@@ -78,11 +116,11 @@ textarea {
     }
 }
 
-@media screen and (max-width: 500px){
-    .small{
-        width: 80%;
-    }
-    textarea {
-        width: 80%;
-    }
-}
+// @media screen and (max-width: 500px){
+//     .small{
+//         width: 80%;
+//     }
+//     textarea {
+//         width: 80%;
+//     }
+// }

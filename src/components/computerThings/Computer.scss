@@ -8,7 +8,6 @@
 }
 
 .projectWrapper {
-    //border: 1px solid aqua;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -16,13 +15,12 @@
 }
 
 .projectIntro {
-    //border: 1px solid green;
     width:90%;
     display: flex;
     flex-direction: column;
     gap:1em;
     text-align: justify;
-    section {
+    .quote {
         background-color: lightgray;
         border-radius: 5px;
         padding: 1em;
@@ -163,19 +161,25 @@
         width:100%;
     }
     .stacking {
-        width: 100%;
+        // 
+        height: 1.65em;
+        margin-bottom: 1em;
     }
     .contentWrapper {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 2em;
     }
     .text {
         width: 80%;
     }
     .snapshot {
         width:80%;
-        margin-bottom: 2em;
+        //margin-bottom: 2em;
         z-index: auto;
+    }
+    .bottomLink{
+        margin-top: 1em;
     }
     
 }
