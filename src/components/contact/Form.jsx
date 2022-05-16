@@ -23,12 +23,27 @@ export default function ContactForm (){
     
             fetch(`https://queenstea.herokuapp.com/messages`, config)
             .then(response => response.json())
-            .then(response => console.log(response))
-            .catch(error => console.log(error.message))
+            .then(response => {
+                if(response.submittedName){
+                alert(`Thank you ${response.submittedName} for your message`)
+                setSendName("")
+                setSendEmail("")
+                setSendMessage("")
+                }else {
+                    alert(`Message could not be sent. Please check your info and try again`)
+                }
+            })
             
-            setSendName("")
-            setSendEmail("")
-            setSendMessage("")
+            // .then(response => {
+            //     if (response.status == 200){
+            //         
+            //     }    
+            //     console.log(response.status)})
+            .catch(error => console.log(error.message))
+
+        
+            
+            
     }
     
     
