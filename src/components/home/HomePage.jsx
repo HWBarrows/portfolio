@@ -32,12 +32,15 @@ export default function HomePage() {
             </ul>
             </div>
             <div className="flexContainer">
-                <div className='prettyWords'></div>  
+                <div className='cardWrapper'></div>
+                <div className='web'></div>
+                <div className='eloper'></div>
+                {/* <div className='prettyWords'></div>  
                 
                 <div className='skillsWrapper' >
                     <div className='skillsColl1'>web</div>
                     <div className='skillsColl1'>dev</div>
-                </div>
+                </div> */}
             </div>
             <span ref={aboutRef}/>
              <AboutMe/> 

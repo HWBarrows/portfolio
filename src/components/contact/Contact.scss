@@ -7,6 +7,53 @@
     align-items: center;
 }
 
+.contactTitle {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    width:80%;
+}
+
+.justify {
+    width:80%;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.contactIconWrapper {
+    width: 20%;
+    a {
+        text-decoration: none;
+        color: inherit;
+        width:200px;
+    }
+}
+
+.iconContext {
+    color: #41B2BA;
+    font-size: 1.25em;
+    &:hover{
+        color: salmon;
+    }
+}
+
+.contactIconic {
+    height: 35px;
+    width:200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25em;
+    p{
+        display: inline-block;
+    }
+}
+
+form {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
 .formWrapper {
     width: 80%;
     p{
@@ -21,6 +68,7 @@
     button {
         width: 150px;
         border-radius: 4px;
+        margin-bottom: 2em;
         background-color: #41B2BA;
         outline: salmon;
         border: none;
@@ -30,74 +78,24 @@
     }
 }
 
-.contactTitle {
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-    width:80%;
-}
-
-.contactIconWrapper {
-    //margin-top: 2em;
-    //border: 1px solid red;
-    margin-bottom: 5em;
-    width: 80%;
-    a {
-        text-decoration: none;
-        color: inherit;
-        // &:hover{
-        //     color: salmon;
-        // }
-    }
-}
-
-.iconContext {
-    color: #41B2BA;
-    font-size: 1.25em;
-    &:hover{
-        color: salmon;
-    }
-}
-
-.contactIconic {
-    //border: 1px solid green;
-    height: 35px;
-    width:200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.25em;
-    p{
-        display: inline-block;
-    }
-}
-
-form {
-    // padding: 2.5em;
-    display: flex;
-    gap: 1em;
-    flex-direction: column;
-}
-
 .small {
+    
     display: flex;
+    box-sizing: border-box;
     justify-content: space-between;
     gap: 10px;
     width: 100%;
     
     
+    
     input{
-        width:100%;
+        width:49%;
         height: 2em;
         padding: .25em;
         border-radius: 5px;
         outline: 2px solid #41B2BA;
     }
 }
-
-// .large {
-//     width:80%;
-// }
-
 textarea {
     width:100%;
     padding: .25em;
@@ -109,10 +107,10 @@ textarea {
 @media screen and (max-width: 700px){
     .small {
         flex-direction: column;
-        // input {
-        //     width: 100%;
-        //     box-sizing: border-box;
-        // }
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
     }
 }
 

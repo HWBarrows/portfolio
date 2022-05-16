@@ -50,7 +50,7 @@ export default function AboutMe (){
                     <hr/>
 
                     <div className='iconic'>
-                    <h2>Social Skills</h2>
+                    <h2>Communication Skills</h2>
                     <RiTeamLine/>
                 </div>
                     <ul className='listWrapper'>

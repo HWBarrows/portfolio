@@ -43,9 +43,9 @@ export default function ContactForm (){
                     <input type="text" placeholder="Name" value={sendName} onChange={(e)=> setSendName(e.target.value)}/>
                     <input type="email" placeholder='Email' value={sendEmail} onChange={(e)=> setSendEmail(e.target.value)}/>
                 </div>
-               <div className='large'>
+               
                     <textarea value={sendMessage} placeholder='Message'rows={5} onChange={(e)=>setSendMessage(e.target.value)}></textarea>
-                </div>    
+                    
                     <button type="submit">send</button>
            </form>
         </div>
