@@ -1,6 +1,5 @@
 import React,{ useState, useRef } from 'react'
 import './Computer.scss'
-import { BiWinkSmile } from "react-icons/bi";
 
 
 export default function ComputerThings({skillsRef}) {
@@ -38,7 +37,7 @@ export default function ComputerThings({skillsRef}) {
                             
                             <div className='contentWrapper'>
                                 <div className='text'>
-                                <p>By creating projects of varying complexities, I've developed greater skills in error catching, API calls, asynchronous programming, responsive design, frameworks, and libraries. My ambitions are high, and lucky for my, so are my patience and passion. I see each time my code breaks as an opportunity to learn more about development and improve my craft.</p>
+                                <p>My ambitions are high, and lucky for me, so are my patience and passion. I see each time my code breaks as an opportunity to learn more about development and improve my craft. And by creating projects of varying complexities, I've developed greater skills in error catching, API calls, asynchronous programming, responsive design, frameworks, and libraries. </p>
                                 <p>The current site you're visiting, hallieb.tech, is a full-stack, fully responsive React web app with a self constructed REST API via Mongodb. It builds upon lessons learned via a 12 month web development course from DCI Digital Career Institute gGmbH. Below are additional apps of which I'm especially proud. More projects and codes used can be found at my <a href='https://github.com/HWBarrows'>Github profile.</a></p>
                                 </div>
                                 <div className='snapshot snapPre'></div>

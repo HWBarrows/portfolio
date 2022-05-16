@@ -86,3 +86,9 @@ hr {
             }
 }
 
+@media screen and (max-width:600px){
+    .aboutWrapper {
+        flex-direction: column;
+    }
+    
+}

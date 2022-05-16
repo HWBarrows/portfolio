@@ -2,23 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: 'Karla', sans-serif;
-    
-
-    // $hbpink:#CD6479;
-    // $hbaqua: #41B2BA;
 }
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap');
 
-// @font-face {
-//     font-family: HaarlemDeco;
-//     src: url("../assets/fonts/HaarlemDeco.ttf");
-//     font-weight: normal;
-// }
-// @font-face {
-//     font-family: Halosense;
-//     src: url("../assets/fonts/Halosense/Halosense-Regular.otf");
-//     font-weight: normal;
-// }
 
 body {
     width: 100%;
@@ -28,9 +14,7 @@ body {
 
 
 .happyAppy {
-    //border:2px solid greenyellow;
     max-width: 1600px;
-    
 }
 
 @media screen and (max-width:600px){
