@@ -14,28 +14,30 @@
     justify-content: space-between; 
 }
 
-.projectIntro {
-    width:90%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
-    gap:1em;
-    text-align: justify;
-    .quote {
+// .projectIntro {
+//     
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 1em;
+//     gap:1em;
+//     text-align: justify;
+.quote {
         background-color: lightgray;
         border-radius: 5px;
         padding: 1em;
-    }
-    a{  
+        width:95%;
+        margin: 0 auto;
+    
+        a{  
         color: #0e9aa4;
         text-decoration: none;
         &:hover {
             color: rgb(218, 79, 218);
         }
     }
-
-
 }
+
+
 .stickyTitle{
     padding-top: 1.5em;
     background-color: white;
@@ -82,8 +84,9 @@
 }
 
 .snapPre {
-    background-image: url('../../assets/webDevCard2.png');
+    background-image: url('../../assets/snappyBdcpm.png');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 

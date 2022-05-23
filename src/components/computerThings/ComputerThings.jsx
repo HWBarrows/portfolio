@@ -26,14 +26,11 @@ export default function ComputerThings({skillsRef}) {
                 </div>
                     <div className='projectWrapper'>
 
-                    <div className='contentWrapper'>
-                        <div className='projectIntro'>
-                             
-                            <div className='quote'>"...the most important thing you can do is do a lot of work. Put yourself on a deadline so that every week you will finish one story. It is only by going through a volume of work that you will close that gap, and your work will be as good as your ambitions."<span> 
+                             <div className='quote'>"...the most important thing you can do is do a lot of work. Put yourself on a deadline so that every week you will finish one story. It is only by going through a volume of work that you will close that gap, and your work will be as good as your ambitions."<span> 
                                 <br/>
                                 <br/>
                                 <a href='https://www.goodreads.com/quotes/309485-nobody-tells-this-to-people-who-are-beginners-i-wish' target="_blank">-Ira Glass</a></span>
-                            </div> 
+                            </div>
                             
                             <div className='contentWrapper'>
                                 <div className='text'>
@@ -43,8 +40,6 @@ export default function ComputerThings({skillsRef}) {
                                 <div className='snapshot snapPre'></div>
                             </div>
                             
-                        </div>
-                    </div>
                             
                             <h2 id="title1" className={`stacking ${title1style}`} onClick={()=> scrollToElement(project1ref)}>Goddess Gallery</h2>
                         
